@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Google Rewards - rewards.com</title>
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Google_Opinion_Rewards_app_logo.png/512px-Google_Opinion_Rewards_app_logo.png">
+<style>
+body {
+font-family: 'Roboto', sans-serif;
+background-color: #fff;
+color: #202124;
+text-align: center;
+padding-top: 80px;
+}
+
+.logo img {
+width: 96px;
+margin-bottom: 20px;
+}
+
+.brand {
+font-size: 20px;
+color: #5f6368;
+margin-bottom: 30px;
+}
+
+h1 {
+font-size: 30px;
+margin-top: 10px;
+}
+
+p {
+font-size: 18px;
+margin-bottom: 30px;
+}
+
+button {
+font-size: 18px;
+padding: 12px 30px;
+background-color: #1a73e8;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+button:hover {
+background-color: #1664c0;
+}
+
+#prank {
+display: none;
+font-size: 26px;
+color: #d93025;
+font-weight: bold;
+margin-top: 40px;
+}
+
+.footer {
+margin-top: 80px;
+font-size: 14px;
+color: #70757a;
+}
+</style>
+</head>
+<body>
+
+<div class="logo">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Google_Opinion_Rewards_app_logo.png/512px-Google_Opinion_Rewards_app_logo.png" alt="Google Rewards Logo">
+</div>
+<div class="brand"><strong>rewards.com</strong> - powered by Google</div>
+
+<h1>Congratulations!</h1>
+<p>You've been selected for a special Google Rewards bonus of <strong>£5,000,000</strong>.</p>
+<button onclick="claimReward()">Claim Your Reward</button>
+
+<div id="prank">YOU GOT SCAMMED!</div>
+
+<div class="footer">©2025 rewards.com | Google LLC - Not affiliated with actual promotions</div>
+
+<script>
+function claimReward() {
+document.querySelector('h1').innerText = "";
+document.querySelector('p').innerText = "";
+document.querySelector('button').style.display = "none";
+document.getElementById('prank').style.display = "block";
+
+// Immediately redirect after showing "YOU GOT SCAMMED!"
+window.location.href = "https://youtu.be/Jg2SPb-p_fc?si=HgfpbdQp9URIWbKo";
+}
+</script>
+
+</body>
+</html>
